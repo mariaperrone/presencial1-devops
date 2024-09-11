@@ -22,10 +22,10 @@ def punto_de_silla():
         inicio = i * cant_columnas
         fin = (i + 1) * cant_columnas
 
-        # Obtener los valores de la fila
+        # Obtengo los valores de la fila
         fila = valores[inicio:fin]
 
-        # Agreggo la fila a la matriz
+        # Agrego la fila a la matriz
         matriz.append(fila)
 
     # 2. Calculo los puntos de silla
