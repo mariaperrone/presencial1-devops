@@ -14,7 +14,7 @@ def contar_subcadena():
     cadena = request.args.get('cadena', '')
     subcadena = request.args.get('subcadena', '')
 
-    # Cuento cuántas veces aparece la subcadena en cadena 
+    # Cuento cuantas veces aparece la subcadena en cadena 
     resultado = cadena.count(subcadena)
 
     return jsonify({"cadena":cadena,"subcadena": subcadena, "cantidad de veces que aparece": resultado})
