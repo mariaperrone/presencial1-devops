@@ -18,7 +18,7 @@ def punto_de_silla():
     # 1. Construyo la matriz
     # Recorro la cantidad de filas
     for i in range(cant_filas):
-        # Calcular los índices que definen qué elementos de la lista valores pertenecen a cada fila de la matriz.
+        # Calculo los índices que definen qué elementos de la lista valores pertenecen a cada fila de la matriz.
         inicio = i * cant_columnas
         fin = (i + 1) * cant_columnas
 

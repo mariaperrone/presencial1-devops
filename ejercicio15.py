@@ -30,7 +30,7 @@ def suma_diagonal():
         # Agrego la fila a la matriz
         matriz.append(fila)
 
-    # 2. Calcular la suma 
+    # 2. Calculo la suma 
     suma = 0    
     # Recorro la matriz para sumar los elementos por encima de la diagonal principal
     for i in range(cant_filas):

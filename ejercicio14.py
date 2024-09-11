@@ -20,16 +20,17 @@ def traspuesta():
     # 1. Construyo la matriz
     # Recorro la cantidad de filas
     for i in range(cant_filas):
-        # Calcular los índices que definen qué elementos de la lista valores pertenecen a cada fila de la matriz.
+        # Calculo los índices que definen qué elementos de la lista valores pertenecen a cada fila de la matriz.
         inicio = i * cant_columnas
         fin = (i + 1) * cant_columnas
 
-        # Obtener los valores de la fila
+        # Obtengo los valores de la fila
         fila = valores[inicio:fin]
 
         # Agreggo la fila a la matriz
         matriz.append(fila)
 
+    # 2. Matriz traspuesta
     matriz_traspuesta = []
 
     # Recorro las columnas de matriz y voy a ir agregando filas a matriz_traspuesta
@@ -37,12 +38,12 @@ def traspuesta():
         
         fila_matriz_traspuesta = []
         
-        # Recorremos las filas de matriz 
+        # Recorro las filas de matriz 
         for i in range(cant_filas):
             # Agrego el valor de la fila i, columna j a la fila de la matriz traspuesta
             fila_matriz_traspuesta.append(matriz[i][j])
         
-        # Añadir la fila a la matriz traspuesta
+        # Agrego la fila a la matriz traspuesta
         matriz_traspuesta.append(fila_matriz_traspuesta)
 
     return jsonify({"matriz_traspuesta": matriz_traspuesta})
